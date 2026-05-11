@@ -1,29 +1,38 @@
 {
   "expo": {
-    "name": "eventhub-mobile",
+    "name": "EventHub",
     "slug": "eventhub-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "scheme": "eventhub",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2563EB"
     },
-    "ios": {
-      "supportsTablet": true
+    "web": {
+      "bundler": "metro"
     },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#2563EB"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.eventhub.mobile"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "ios": {
+      "bundleIdentifier": "com.eventhub.mobile",
+      "supportsTablet": true
+    },
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
